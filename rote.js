@@ -5,14 +5,13 @@ const greet = () => {
 greet()
 
 const square = (num) => {
-    return num * num
+    return num * num 
 }
 
 square(25)
 
 const greetByName = (str) => {
-    console.log("Hello", str)
+    console.log('Gautam')
 }
 
-greetByName("Gautam")
-
+greetByName('Gautam')
