@@ -25,6 +25,6 @@ const greet = (person) => {
     console.log('Hello', person)
 }
 
-const functionC = () -> {
+const functionC = () => {
     console.log("Function C Has been Called!")
 }
