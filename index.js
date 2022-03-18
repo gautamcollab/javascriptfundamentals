@@ -26,4 +26,3 @@ const askForString = () =>  {
     return str
 }
 
-console.log(askForString().split(''))
