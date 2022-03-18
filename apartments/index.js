@@ -62,7 +62,7 @@ let building = {
         if (apt.tenants.length === apt.bedrooms) {
         return `${apt.unit} is already full!`
         }
-        if (this.allowsPets === tenant.pet){
+        if (this.allowsPets === false && tenant.pet){
             return `${apt.unit} is available, but you must give ${tenant.pet} up for adoption!`
         }
         apt.tenants.push(tenant)
