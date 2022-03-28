@@ -1,3 +1,5 @@
+
+
 let apt1 = {
     bedrooms: 2, 
     sqft: 50, 
@@ -52,8 +54,9 @@ let tenant2 = {
     salary: 22000, 
     age: 33 
 }
-        
 
+
+        
 let building = {
     streetAddress: '74 N 7th Street, Brooklyn NY 11249',
     laundry: false,
@@ -85,3 +88,19 @@ let building = {
     },
     apartments: [apt1, apt2, apt3]
 }
+
+const div = document.getElementById('building')
+
+const render = () => {
+    let h2 = document.createElement('h2')
+    h2.innerText = building.streetAddress
+    let ul = document.createElement('ul')
+    building.apartments.forEach((element) => {
+        let li = document.createElement('li')
+        li.innerText = element.unit
+        ul.append(li)
+    })
+    div.append(h2, ul)
+}
+
+render () 
